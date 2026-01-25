@@ -6,7 +6,6 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import SocialFollow from '@/components/SocialFollow';
 import Amenities from '@/components/Amenities';
-import ApplicationForm from '@/components/ApplicationForm';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -20,7 +19,6 @@ const Index = () => {
           <Hero />
           <SocialFollow />
           <Amenities />
-          <ApplicationForm />
           <Contact />
         </main>
         <Footer />
