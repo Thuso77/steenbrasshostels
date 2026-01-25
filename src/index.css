@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 25 77% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 78 35% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-olive text-white font-roboto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+
+  /* Optimize images for better performance */
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+/* Critical CSS for above-the-fold content */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: hsl(var(--secondary));
+}
+
+.amenity-icon {
+  @apply bg-olive-light text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3 transition-transform hover:scale-110;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 bg-olive-light border border-orange/20 rounded-md focus:outline-none focus:ring-2 focus:ring-orange text-white placeholder:text-white/70;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply bg-orange hover:bg-orange-light text-white font-medium py-3 px-6 rounded-md transition-colors duration-200 inline-block;
+}
+
+.btn-secondary {
+  @apply bg-transparent hover:bg-olive-light text-orange border border-orange font-medium py-3 px-6 rounded-md transition-colors duration-200 inline-block;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* For the accordion styling */
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-content.open {
+  height: auto;
+}
+
+/* Loading optimization */
+.loading-skeleton {
+  @apply animate-pulse bg-olive-light rounded;
+}
