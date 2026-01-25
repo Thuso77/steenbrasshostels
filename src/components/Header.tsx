@@ -18,13 +18,10 @@ const Header = () => {
           <a href="#home" className="block">
             <img 
               src={steenbrasLogo}
-              alt="Steenbras Properties Logo" 
-              className="h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              alt="Steenbras Hostels Logo" 
+              className="h-16 md:h-20 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </a>
-          <div className="ml-3 hidden md:block">
-            <p className="text-xs text-orange">Serviced Communal Living Hostels</p>
-          </div>
         </div>
 
         {/* Desktop Navigation */}
