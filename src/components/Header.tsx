@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import SignInButton from './SignInButton';
-import steenbrasLogo from '/lovable-uploads/f27de235-0046-41e9-b89c-fc1a0a66d11e.png';
+import steenbrasLogo from '@/assets/steenbras-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,12 +31,10 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#home" className="text-white hover:text-orange transition-colors">Home</a>
           <a href="#amenities" className="text-white hover:text-orange transition-colors">Amenities</a>
-          <a href="#apply" className="text-white hover:text-orange transition-colors">Apply Now</a>
           <a href="#contact" className="text-white hover:text-orange transition-colors">Contact</a>
-          <SignInButton />
           <Button className="bg-orange hover:bg-orange-light text-white" asChild>
             <a href="https://wa.me/27614749115" target="_blank" rel="noopener noreferrer">
-              Book a Viewing
+              Apply via WhatsApp
             </a>
           </Button>
         </nav>
@@ -54,12 +51,10 @@ const Header = () => {
           <nav className="flex flex-col space-y-4">
             <a href="#home" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Home</a>
             <a href="#amenities" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Amenities</a>
-            <a href="#apply" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Apply Now</a>
             <a href="#contact" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Contact</a>
-            <SignInButton />
             <Button className="bg-orange hover:bg-orange-light text-white w-full" asChild>
               <a href="https://wa.me/27614749115" target="_blank" rel="noopener noreferrer">
-                Book a Viewing
+                Apply via WhatsApp
               </a>
             </Button>
           </nav>

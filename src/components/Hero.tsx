@@ -86,7 +86,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="btn-primary">
-              <a href="#apply" aria-label="Apply for accommodation at Steenbras Hostels">Apply Now</a>
+              <a href="https://wa.me/27614749115" target="_blank" rel="noopener noreferrer" aria-label="Apply for accommodation via WhatsApp">Apply via WhatsApp</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="btn-secondary">
               <a href="#contact" aria-label="Contact Steenbras Properties">Contact Us</a>
