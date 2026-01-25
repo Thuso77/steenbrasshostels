@@ -14,27 +14,31 @@ const Header = () => {
     <header className="bg-olive-dark py-4 sticky top-0 z-50 shadow-md">
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center flex-shrink-0">
           <a href="#home" className="block">
             <img 
               src={steenbrasLogo}
               alt="Steenbras Hostels Logo" 
-              className="h-16 md:h-20 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              className="h-20 md:h-28 w-auto cursor-pointer hover:opacity-80 transition-opacity"
             />
           </a>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        {/* Desktop Navigation - Centered */}
+        <nav className="hidden md:flex items-center justify-center flex-1 space-x-8">
           <a href="#home" className="text-white hover:text-orange transition-colors">Home</a>
           <a href="#amenities" className="text-white hover:text-orange transition-colors">Amenities</a>
           <a href="#contact" className="text-white hover:text-orange transition-colors">Contact</a>
+        </nav>
+
+        {/* WhatsApp Button */}
+        <div className="hidden md:block flex-shrink-0">
           <Button className="bg-orange hover:bg-orange-light text-white" asChild>
             <a href="https://wa.me/27614749115" target="_blank" rel="noopener noreferrer">
               Apply via WhatsApp
             </a>
           </Button>
-        </nav>
+        </div>
 
         {/* Mobile Menu Button */}
         <button onClick={toggleMenu} className="md:hidden text-white">
