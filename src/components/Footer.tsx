@@ -17,7 +17,7 @@ const Footer = () => {
                   className="h-12 w-auto mb-2 cursor-pointer hover:opacity-80 transition-opacity"
                 />
               </a>
-              <h3 className="text-lg font-semibold">Steenbras Properties</h3>
+              <h3 className="text-lg font-semibold">Steenbras Hostels</h3>
             </div>
             <p className="text-sm text-white/70 mb-4">Serviced Communal Living Hostels – Comfort. Community. Affordability.</p>
           </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         
         <div className="border-t border-olive-light/30 mt-12 pt-6 text-center">
           <p className="text-white/60 text-sm">
-            &copy; {currentYear} Steenbras Properties. All rights reserved. | <a href="https://steenbrasproperties.co.za" className="hover:text-orange transition-colors">steenbrasproperties.co.za</a>
+            &copy; {currentYear} Steenbras Hostels. All rights reserved. | <a href="https://steenbrashostels.co.za" className="hover:text-orange transition-colors">steenbrashostels.co.za</a>
           </p>
         </div>
       </div>
