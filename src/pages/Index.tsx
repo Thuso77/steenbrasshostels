@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import SocialFollow from '@/components/SocialFollow';
+
 import Amenities from '@/components/Amenities';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -17,7 +17,7 @@ const Index = () => {
         <Header />
         <main className="flex-grow">
           <Hero />
-          <SocialFollow />
+          
           <Amenities />
           <Contact />
         </main>
