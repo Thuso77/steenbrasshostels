@@ -19,13 +19,6 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <div>
-                  <p className="text-orange font-medium">Email</p>
-                  <a href="mailto:info@steenbras.co.za" className="text-white hover:text-orange transition-colors">
-                    info@steenbras.co.za
-                  </a>
-                </div>
-                
-                <div>
                   <p className="text-orange font-medium">Phone</p>
                   <a href="tel:+27614749115" className="text-white hover:text-orange transition-colors">
                     +27 61 474 9115
@@ -41,13 +34,6 @@ const Contact = () => {
                     Western Cape, 7405<br />
                     South Africa
                   </address>
-                </div>
-                
-                <div>
-                  <p className="text-orange font-medium">Office Hours</p>
-                  <p className="text-white/80">
-                    We are open everyday: 9:00 AM - 5:00 PM
-                  </p>
                 </div>
               </div>
             </div>
