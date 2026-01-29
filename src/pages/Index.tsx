@@ -8,6 +8,7 @@ import Gallery from '@/components/Gallery';
 import Amenities from '@/components/Amenities';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
           <Contact />
         </main>
         <Footer />
+        <FloatingWhatsApp />
       </div>
     </HelmetProvider>
   );
