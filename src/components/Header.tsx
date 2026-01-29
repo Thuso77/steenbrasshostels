@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 import steenbrasLogo from '@/assets/steenbras-logo.png';
 
 const Header = () => {
@@ -26,10 +27,10 @@ const Header = () => {
 
         {/* Desktop Navigation - Centered */}
         <nav className="hidden md:flex items-center justify-center flex-1 space-x-8">
-          <a href="#home" className="text-white hover:text-orange transition-colors">Home</a>
-          <a href="#gallery" className="text-white hover:text-orange transition-colors">Gallery</a>
-          <a href="#amenities" className="text-white hover:text-orange transition-colors">Amenities</a>
-          <a href="#contact" className="text-white hover:text-orange transition-colors">Contact</a>
+          <a href="/#home" className="text-white hover:text-orange transition-colors">Home</a>
+          <Link to="/gallery" className="text-white hover:text-orange transition-colors">Gallery</Link>
+          <a href="/#amenities" className="text-white hover:text-orange transition-colors">Amenities</a>
+          <a href="/#contact" className="text-white hover:text-orange transition-colors">Contact</a>
         </nav>
 
         {/* WhatsApp Button */}
@@ -51,10 +52,10 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-olive-dark py-4 px-4 absolute top-full left-0 right-0 shadow-lg animate-fade-in">
           <nav className="flex flex-col space-y-4">
-            <a href="#home" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Home</a>
-            <a href="#gallery" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Gallery</a>
-            <a href="#amenities" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Amenities</a>
-            <a href="#contact" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Contact</a>
+            <a href="/#home" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Home</a>
+            <Link to="/gallery" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Gallery</Link>
+            <a href="/#amenities" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Amenities</a>
+            <a href="/#contact" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Contact</a>
             <Button className="bg-orange hover:bg-orange-light text-white w-full" asChild>
               <a href="https://wa.me/27740302781" target="_blank" rel="noopener noreferrer">
                 Apply via WhatsApp
