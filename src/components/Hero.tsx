@@ -2,72 +2,52 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 
+// Import common areas images for slideshow
+import patio1 from '@/assets/gallery/patio-1.jpeg';
+import patio2 from '@/assets/gallery/patio-2.jpeg';
+import patio3 from '@/assets/gallery/patio-3.jpeg';
+import patio4 from '@/assets/gallery/patio-4.jpeg';
+import passage1 from '@/assets/gallery/passage-1.jpeg';
+
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState(false);
   
   const images = [
-    "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=1920&h=1080",
-    "https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&q=80&w=1920&h=1080",
-    "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80&w=1920&h=1080",
-    "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&q=80&w=1920&h=1080"
+    { src: patio1, alt: 'Covered Patio Area with Seating' },
+    { src: patio2, alt: 'Outdoor Dining Tables' },
+    { src: patio3, alt: 'Patio with Hanging Plants' },
+    { src: patio4, alt: 'Covered Walkway to Patio' },
+    { src: passage1, alt: 'Clean Hallway with Storage' },
   ];
 
   useEffect(() => {
-    // Preload images for better performance
-    const preloadImages = () => {
-      let loadedCount = 0;
-      images.forEach((src) => {
-        const img = new Image();
-        img.onload = () => {
-          loadedCount++;
-          if (loadedCount === images.length) {
-            setImagesLoaded(true);
-          }
-        };
-        img.src = src;
-      });
-    };
-
-    preloadImages();
-  }, []);
-
-  useEffect(() => {
-    if (!imagesLoaded) return;
-    
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [images.length, imagesLoaded]);
+  }, [images.length]);
 
   return (
     <section id="home" className="relative bg-olive-dark min-h-[600px] flex items-center">
       <div className="absolute inset-0 overflow-hidden">
         <div className="h-full w-full relative">
-          {imagesLoaded ? (
-            images.map((src, index) => (
-              <div 
-                key={index} 
-                className={`absolute inset-0 transition-opacity duration-1000 ${
-                  currentSlide === index ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <div className="absolute inset-0 bg-olive/70 z-10"></div>
-                <img
-                  src={src}
-                  alt={`Steenbras Hostel Interior ${index + 1}`}
-                  className="object-cover w-full h-full"
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-              </div>
-            ))
-          ) : (
-            <div className="absolute inset-0 bg-olive-dark flex items-center justify-center">
-              <div className="text-white">Loading...</div>
+          {images.map((image, index) => (
+            <div 
+              key={index} 
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                currentSlide === index ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="absolute inset-0 bg-olive/70 z-10"></div>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="object-cover w-full h-full"
+                loading={index === 0 ? "eager" : "lazy"}
+              />
             </div>
-          )}
+          ))}
         </div>
       </div>
 
