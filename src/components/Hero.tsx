@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 // Import common areas images for slideshow
 import patio1 from '@/assets/gallery/patio-1.jpeg';
@@ -66,7 +67,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="btn-primary">
-              <a href="/gallery" aria-label="View our gallery">Gallery</a>
+              <Link to="/gallery" aria-label="View our gallery">Gallery</Link>
             </Button>
           </div>
         </div>
