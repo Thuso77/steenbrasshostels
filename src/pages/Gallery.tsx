@@ -10,17 +10,36 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
-// Import gallery images
+// Import gallery images - Exterior
 import exterior1 from '@/assets/gallery/exterior-1.jpeg';
 import exterior2 from '@/assets/gallery/exterior-2.jpeg';
+
+// Import gallery images - Gardens
 import garden1 from '@/assets/gallery/garden-1.jpeg';
 import garden2 from '@/assets/gallery/garden-2.jpeg';
 import garden3 from '@/assets/gallery/garden-3.jpeg';
+
+// Import gallery images - Common Areas
 import patio1 from '@/assets/gallery/patio-1.jpeg';
 import patio2 from '@/assets/gallery/patio-2.jpeg';
 import patio3 from '@/assets/gallery/patio-3.jpeg';
 import patio4 from '@/assets/gallery/patio-4.jpeg';
+import passage1 from '@/assets/gallery/passage-1.jpeg';
+
+// Import gallery images - Bedrooms
+import bedroom1 from '@/assets/gallery/bedroom-1.jpeg';
+import bedroom2 from '@/assets/gallery/bedroom-2.jpeg';
+import bedroom3 from '@/assets/gallery/bedroom-3.jpeg';
+import bedroom4 from '@/assets/gallery/bedroom-4.jpeg';
+
+// Import gallery images - Bathrooms
+import toilet1 from '@/assets/gallery/toilet-1.jpeg';
+import shower1 from '@/assets/gallery/shower-1.jpeg';
+
+// Import gallery images - Facilities
 import kitchen1 from '@/assets/gallery/kitchen-1.jpeg';
+import kitchen2 from '@/assets/gallery/kitchen-2.jpeg';
+import solar1 from '@/assets/gallery/solar-1.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -29,19 +48,39 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
-  { src: exterior1, alt: 'Hostel Front View with Garden', category: 'Exterior' },
-  { src: exterior2, alt: 'Building and Outdoor Seating', category: 'Exterior' },
+  // Bedrooms - First to showcase rooms
+  { src: bedroom4, alt: 'Comfortable Bunk Beds with Window View', category: 'Bedrooms' },
+  { src: bedroom1, alt: 'Cozy Bunk Bed Room', category: 'Bedrooms' },
+  { src: bedroom2, alt: 'Spacious Dorm Room with Multiple Bunks', category: 'Bedrooms' },
+  { src: bedroom3, alt: 'Bunk Beds with Modern Decor', category: 'Bedrooms' },
+  
+  // Bathrooms
+  { src: shower1, alt: 'Clean Shower Facility', category: 'Bathrooms' },
+  { src: toilet1, alt: 'Modern Toilet Facility', category: 'Bathrooms' },
+  
+  // Common Areas
+  { src: passage1, alt: 'Clean Hallway with Storage', category: 'Common Areas' },
   { src: patio1, alt: 'Covered Patio Area with Seating', category: 'Common Areas' },
   { src: patio2, alt: 'Outdoor Dining Tables', category: 'Common Areas' },
   { src: patio3, alt: 'Patio with Hanging Plants', category: 'Common Areas' },
   { src: patio4, alt: 'Covered Walkway to Patio', category: 'Common Areas' },
+  
+  // Facilities
+  { src: kitchen1, alt: 'Modern Shared Kitchen', category: 'Facilities' },
+  { src: kitchen2, alt: 'Kitchen Sink Area', category: 'Facilities' },
+  { src: solar1, alt: 'Solar Power System with Battery Backup', category: 'Facilities' },
+  
+  // Exterior
+  { src: exterior1, alt: 'Hostel Front View with Garden', category: 'Exterior' },
+  { src: exterior2, alt: 'Building and Outdoor Seating', category: 'Exterior' },
+  
+  // Gardens
   { src: garden1, alt: 'Garden Entrance with Planter', category: 'Gardens' },
   { src: garden2, alt: 'Backyard Garden with Bench', category: 'Gardens' },
   { src: garden3, alt: 'Side Garden Area', category: 'Gardens' },
-  { src: kitchen1, alt: 'Modern Shared Kitchen', category: 'Facilities' },
 ];
 
-const categories = ['All', 'Exterior', 'Common Areas', 'Gardens', 'Facilities'];
+const categories = ['All', 'Bedrooms', 'Bathrooms', 'Common Areas', 'Facilities', 'Exterior', 'Gardens'];
 
 const GalleryPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
