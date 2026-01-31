@@ -48,7 +48,7 @@ const Contact = () => {
             </p>
             
             <Button className="w-full bg-orange hover:bg-orange-light text-white text-lg py-6" asChild>
-              <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+              <a href="https://wa.me/27840302781?text=Hello%2C%20I%20would%20like%20to%20apply.%0A%0AName%20%26%20Surname%3A%0AOccupation%3A%0ACurrent%20Address%3A%0APreferred%20Check-in%20Date%20(if%20approved)%3A%0APlanned%20Length%20of%20Stay%20(if%20approved)%3A" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Apply via WhatsApp: +27 84 030 2781
               </a>

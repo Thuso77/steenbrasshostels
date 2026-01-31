@@ -36,7 +36,7 @@ const Header = () => {
         {/* WhatsApp Button */}
         <div className="hidden md:block flex-shrink-0">
           <Button className="bg-orange hover:bg-orange-light text-white" asChild>
-            <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/27840302781?text=Hello%2C%20I%20would%20like%20to%20apply.%0A%0AName%20%26%20Surname%3A%0AOccupation%3A%0ACurrent%20Address%3A%0APreferred%20Check-in%20Date%20(if%20approved)%3A%0APlanned%20Length%20of%20Stay%20(if%20approved)%3A" target="_blank" rel="noopener noreferrer">
               Apply via WhatsApp
             </a>
           </Button>
@@ -57,7 +57,7 @@ const Header = () => {
             <a href="/#amenities" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Amenities</a>
             <a href="/#contact" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Contact</a>
             <Button className="bg-orange hover:bg-orange-light text-white w-full" asChild>
-              <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27840302781?text=Hello%2C%20I%20would%20like%20to%20apply.%0A%0AName%20%26%20Surname%3A%0AOccupation%3A%0ACurrent%20Address%3A%0APreferred%20Check-in%20Date%20(if%20approved)%3A%0APlanned%20Length%20of%20Stay%20(if%20approved)%3A" target="_blank" rel="noopener noreferrer">
                 Apply via WhatsApp
               </a>
             </Button>
