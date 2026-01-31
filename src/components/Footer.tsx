@@ -1,5 +1,5 @@
 import React from 'react';
-import steenbrasLogo from '/lovable-uploads/f27de235-0046-41e9-b89c-fc1a0a66d11e.png';
+import steenbrasLogo from '@/assets/steenbras-logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-2 text-white/70">
               <li>9 Steenbras Street, Brooklyn</li>
               <li>Cape Town, Western Cape, 7405</li>
-              <li>+27 74 030 2781</li>
+              <li>+27 84 030 2781</li>
             </ul>
           </div>
         </div>

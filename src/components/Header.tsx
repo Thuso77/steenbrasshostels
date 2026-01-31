@@ -36,7 +36,7 @@ const Header = () => {
         {/* WhatsApp Button */}
         <div className="hidden md:block flex-shrink-0">
           <Button className="bg-orange hover:bg-orange-light text-white" asChild>
-            <a href="https://wa.me/27740302781" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer">
               Apply via WhatsApp
             </a>
           </Button>
@@ -57,7 +57,7 @@ const Header = () => {
             <a href="/#amenities" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Amenities</a>
             <a href="/#contact" className="text-white hover:text-orange transition-colors" onClick={toggleMenu}>Contact</a>
             <Button className="bg-orange hover:bg-orange-light text-white w-full" asChild>
-              <a href="https://wa.me/27740302781" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer">
                 Apply via WhatsApp
               </a>
             </Button>

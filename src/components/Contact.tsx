@@ -48,9 +48,9 @@ const Contact = () => {
             </p>
             
             <Button className="w-full bg-orange hover:bg-orange-light text-white text-lg py-6" asChild>
-              <a href="https://wa.me/27740302781" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+              <a href="https://wa.me/27840302781" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" />
-                Apply via WhatsApp: +27 74 030 2781
+                Apply via WhatsApp: +27 84 030 2781
               </a>
             </Button>
           </div>
@@ -72,7 +72,7 @@ const Contact = () => {
               {[
                 "A copy of your ID / Passport",
                 "Confirmation of current address",
-                "Confirmation of employment / 3 Bank statements"
+                "Confirmation of employment / 3 months bank statement"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3 bg-olive/50 p-4 rounded-lg">
                   <FileText className="w-5 h-5 text-orange flex-shrink-0 mt-0.5" />
@@ -98,8 +98,8 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <p className="text-white/60 text-sm mb-1">Phone / WhatsApp</p>
-                <a href="tel:+27740302781" className="text-white hover:text-orange transition-colors text-lg font-medium">
-                  +27 74 030 2781
+                <a href="tel:+27840302781" className="text-white hover:text-orange transition-colors text-lg font-medium">
+                  +27 84 030 2781
                 </a>
               </div>
               
